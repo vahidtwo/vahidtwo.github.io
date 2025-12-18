@@ -1,83 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Python & Web Developer">
-<meta name="author" content="Abolfazl Amiri">
-<title>Vahid Imanian</title>
-
-
-
-
-
-
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
-<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
-<!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script> -->
-<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> -->
-
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
-<link href="./css/JetBrainsMono.css" rel="stylesheet">
-<link href="./css/style.css" rel="stylesheet">
-
-<script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "url": "https://vahidtwo.ir",
-        "address": "Iran",
-        "email": "mailto:vahidtwo@gmail.com",
-        "image": "http://vahidtwo.ir/img/vahid.jpg",
-        "jobTitle": "Developer",
-        "name": "Vahid Imanian",
-        "additionalName": "vahidtwo",
-        "description": "Python & Web Developer",
-        "birthPlace": "Isfahan, Iran",
-        "birthDate": "Jan 16, 1996",
-        "height": "175 cm",
-        "gender": "male",
-        "knowsLanguage": "En, Fa",
-        "memberOf": "Republican Party",
-        "nationality": "Iran",
-        "telephone": "+989130740148",
-        "sameAs": [
-          "https://github.com/vahidtwo",
-          "https://www.linkedin.com/in/vahidtwo",
-          "http://twitter.com/vahidtwo",
-          "http://instagram.com/vahidtwo",
-          ]
-      }
-
-    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vahid Imanian</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="container h-100 d-print-none">
-<div class="row h-100 justify-content-center align-items-center">
-<div class="col-lg-3 col-md-5 col-sm-7 col-10 m-3 mt-4">
-<img id="my-picture" class="img-fluid rounded-circle" src="./vahid.jpg" alt="My Picture!">
-</div>
-<div class="col-md-7 mt-2">
-<h1>Vahid Imanian</h1>
-<p class="text-justify p-md-0 p-sm-3 p-4">
-Hello! I'm an enthusiastic Django and Python developer who loves to learn and
-experience new things. Skilled Python developer with 3+ years of experience. Love solving challenging problems, finding the best solutions, improving my skills,
-collaborating with teammates, and eager to learn new technologies. Experienced in Python and Django.. I am available to chat at anything related to computers!
-</p>
-<p class="links p-sm-0 p-2">
-<a href="tel:+989130740148" title="+989130740148"><i class="fas fa-phone" aria-hidden="true"></i></a>
-<a href="mailto:vahidtwo@gmail.com" title="vahidtwo@gmail.com"><i class="fas fa-at" aria-hidden="true"></i></a>
-<a title="Resume" href="./Vahid_imanian.pdf"><i class="fas fa-align-left" aria-hidden="true"></i></a>
-<a href="https://github.com/vahidtwo" rel="noopener" title="GitHub"><i class="fab fa-github-alt" aria-hidden="true"></i></a>
-<a href="https://www.linkedin.com/in/vahidtwo/" title="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
-<a href="https://t.me/vahidtwo/" title="Telegram"><i class="fab fa-telegram-plane" aria-hidden="true"></i></a>
-<a href="https://twitter.com/vahidtwo" title="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-<a href="https://steamcommunity.com/id/vahidtwo/" title="Steam"><i class="fab fa-steam" aria-hidden="true"></i></a>
-</p>
-</div>
-</div>
-</div>
+    <div class="container">
+        <div id="image-container">
+            <img src="vahid.jpg" alt="Vahid Imanian">
+            <a href="Vahid_imanian.pdf" target="_blank">Download Resume</a>
+        </div>
+        <div id="terminal-container">
+            <div id="terminal-title-bar">vahidtwo@github: ~</div>
+            <div id="terminal">
+                <div id="output"></div>
+                <div class="prompt-line">
+                    <span class="prompt"></span>
+                    <input type="text" id="command" autofocus>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
 </html>
