@@ -1,5 +1,6 @@
 const command = document.getElementById('command');
 const output = document.getElementById('output');
+const terminal = document.getElementById('terminal');
 const prompt = document.querySelector('.prompt');
 
 const commandHistory = [];
@@ -14,6 +15,7 @@ Available commands:
   <span class="command-name">skills</span>     - My skills
   <span class="command-name">work</span>       - My work experience
   <span class="command-name">projects</span>   - My open source projects
+  <span class="command-name">awards</span>     - Workshops & awards
   <span class="command-name">contact</span>    - How to contact me
   <span class="command-name">clear</span>      - Clear the terminal
     `,
@@ -24,73 +26,89 @@ Senior Back-end Developer
 Skilled backend developer with 7+ years of experience. Love solving challenging problems, finding the best solutions, improving my skills, collaborating with teammates, and eager to learn new technologies. A cheerful individual with a friendly attitude.
     `,
     skills: `
-**Programming Languages:**
-- Python (Advanced)
-
-**Web Frameworks & Libraries:**
-- Django, Django REST Framework (DRF)
-- FastAPI
-
-**Databases:**
-- PostgreSQL, MySQL, Redis
-
-**DevOps & Cloud:**
-- Docker, Kubernetes (K8S)
-- Linux
-- RabbitMQ
-
-**Architectural & Methodologies:**
-- Test-Driven Development (TDD)
-- Object-Oriented Programming (OOP)
+**Core skills:**
+- Redis
+- Python
+- Django
+- TDD
+- Celery
+- DRF
+- OOP
 - Concurrency
-- System Design
-- Microservices, CQRS, SAGA
-- Auth Mechanisms
+- Linux
+- Auth mechanism
+- MySQL
 
-**Tools & Other:**
+**Familiar with:**
+- Docker
+- FastAPI
+- Microservices
+- System Design
 - Elastic
 - gRPC
+- RabbitMQ
+- K8S
+- PostgreSQL
+- CQRS
+- SAGA
     `,
     work: `
-**Backend Developer @ TOMAN (11/2023 - Present)**
+**Senior Backend Developer @ Khodro45 (12/2025 - Present)** — Tehran
+- Architected and implemented an offline finance dispute-detection system for payment and cash-out workflows, introducing idempotency controls that reduced finance dispute incidents and duplicate payments by 90%.
+- Designed and developed a centralized vehicle and document delivery management system, replacing manual Excel-based operations with an automated and scalable workflow solution.
+- Implemented database-level encryption for sensitive customer information, including national identification and banking data, improving platform security and protecting user financial records.
+- Led technical ownership of two independent business funnels, driving system architecture, service design, code reviews, and engineering best practices across multiple teams.
+- Refactored and optimized the contract management service to resolve concurrency-related issues, reducing workflow errors by 70% and improving system reliability and maintainability.
+- Redesigned data models and service interactions to reduce unnecessary database lookups, improve loose coupling, and enhance overall backend performance and scalability.
+
+**Backend Developer @ TOMAN (11/2023 - 12/2025)** — Tehran — <a href="https://toman.ir" target="_blank">toman.ir</a>
+Toman aims to provide integrated financial solutions for businesses with emphasis on reliability.
 - Engineered and deployed critical financial solutions, including IPG payment refunds and Wallet functionality, while collaborating across four different B2C and B2B teams. Played the main role in resolving five major system-wide disasters.
 - Spearheaded performance optimization for a critical, complex query, reducing memory usage from 32MB to 68KB and execution time from 1.8 seconds to 0.013 seconds by leveraging database aggregation over a less efficient Python approach.
 - As a core member of the Reconciliation Team, developed and implemented a new logic framework to track company-wide transfers and match them with bank statements, achieving a 99.8% matching success rate across six distinct matching strategies.
 
-**Backend Developer @ Bernetco (01/2023 - 11/2023)**
+**Backend Developer @ Bernetco (01/2023 - 11/2023)** — Remote — <a href="https://bernetco.ir" target="_blank">bernetco.ir</a>
+Bernet is a company that's trying to effectively monitor the software development process.
 - Developed a Django admin project featuring interactive maps and charts, and optimized report response time by 70% using aggregation tables.
 - Created a comprehensive Agile-based task and time management program, including task workflows, time entries, Git workflow integration, and various charts implemented using Elasticsearch.
-- Design and implement two project in health and delivery topics.
+- Designed and implemented two projects in health and delivery topics.
 
-**Software and junior DevOps Engineer @ Plasco (09/2021 - 01/2023)**
+**Software and Junior DevOps Engineer @ Plasco (09/2021 - 01/2023)** — Remote
+Automated management of Health and Safety Executive (HSE), focused on anomaly detection and related workflows.
 - Refactored codebase to enhance SOLID principles and improve coupling and cohesion. Transitioned development process to Test-Driven Development (TDD).
-- Dockerized, implemented Github CI/CD, TLS, HAProxy, etc.
+- Dockerized, implemented GitHub CI/CD, TLS, HAProxy, etc.
 - Redesigned database architecture, normalized tables, and improved query time execution by 30%.
 - Deployed solutions across 8+ petrochemical companies.
 
-**Backend Developer @ Snapp CarFix (04/2020 - 04/2021)**
-- Developed and delivered APIs for Agents and ServiceCenters and Store apps with Python, Django, DRF, RabbitMQ, Celery, and Postgresql.
-- Created Agents app, making data gathering 80% faster and completely paperless.
+**Backend Developer @ Snapp CarFix (04/2020 - 04/2021)** — Isfahan — <a href="https://snapcarfix.com" target="_blank">snapcarfix.com</a>
+SnappCarFix is an online platform for car parts and services, backed by Snapp (an Uber clone).
+- Developed and delivered APIs for Agents, ServiceCenters, and Store apps with Python, Django, DRF, RabbitMQ, Celery, and PostgreSQL.
+- Created Agents app, made data gathering 80% faster and completely paperless.
     `,
     projects: `
 **VUID (Vahid Unique Identifier)**
-- **Description:** A Python package designed to generate Vahid Unique Identifiers (VUIDs) based on a custom epoch time and a base-62 encoding scheme.
-- **Tech Stack:** Python
+- The VUID is a Python package designed to generate Vahid unique identifiers (VUIDs) based on a custom epoch time and a base-62 encoding scheme.
 
-**FastCrawler**
-- **Description:** An easy-to-use Python framework for creating spiders for crawling, featuring a scheduler, UI, and CLI.
-- **Tech Stack:** Python
+**FastCrawler (06/2023 - 11/2023)**
+- Team member of the FastCrawler framework. FastCrawler is an easy-to-use Python framework with scheduler, UI, and CLI features for creating spiders for crawling.
 
 **PicDicer (2018)**
-- **Description:** A project focused on redrawing given pictures using a vast amount of dices.
-- **Tech Stack:** Python, Qt, Pillow
+- Redrawing given pictures using a very vast amount of dices with Python, Qt, and Pillow.
+    `,
+    awards: `
+**Python and CEH Workshops (2017)**
+Award for teaching Python (18 hrs) and CEH (22 hrs) workshops, Islamic Azad University of NajafAbad.
+
+**Network Workshop (2016)**
+Award for teaching CCNA workshops (20 hrs), Islamic Azad University of NajafAbad.
     `,
     contact: `
 You can reach me at:
 - Email: <a href="mailto:vahidtwo@gmail.com">vahidtwo@gmail.com</a>
-- LinkedIn: <a href="https://www.linkedin.com/in/vahidtwo" target="_blank">linkedin.com/in/vahidtwo</a>
+- Phone: <a href="tel:+989130740148">+98 913 074 0148</a>
+- Location: Tehran, Iran
+- LinkedIn: <a href="https://linkedin.com/in/vahidtwo" target="_blank">linkedin.com/in/vahidtwo</a>
 - GitHub: <a href="https://github.com/vahidtwo" target="_blank">github.com/vahidtwo</a>
-- Telegram: <a href="https://t.me/vahidtwo" target="_blank">t.me/vahidtwo</a>
     `
 };
 
