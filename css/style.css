@@ -37,6 +37,8 @@ body {
 
 #image-container a {
     margin-top: 10px;
+    display: block;
+    text-align: center;
 }
 
 #terminal-container {

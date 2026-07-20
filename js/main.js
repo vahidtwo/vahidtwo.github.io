@@ -112,6 +112,10 @@ You can reach me at:
     `
 };
 
+function formatOutput(text) {
+    return text.trim().replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+}
+
 function processCommand(cmd) {
     const commandOutput = document.createElement('div');
     commandOutput.classList.add('command-output');
@@ -130,9 +134,9 @@ function processCommand(cmd) {
 
     if (commands[cmd]) {
         if (typeof commands[cmd] === 'function') {
-            outputContent.innerHTML = commands[cmd]();
+            outputContent.innerHTML = formatOutput(commands[cmd]());
         } else {
-            outputContent.innerHTML = commands[cmd];
+            outputContent.innerHTML = formatOutput(commands[cmd]);
         }
     } else {
         outputContent.innerHTML = `<span class="error">command not found: ${cmd}</span>`;
